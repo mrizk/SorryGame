@@ -70,11 +70,10 @@ function graphIt() {
 
 function validateMove(index1, index2) {
     var pieceID = document.getElementById(index1).firstChild.getAttribute("id");
-//    var valid = sorryApplet.validateMove(pieceID, index1, index2);
     var valid = (document.getElementById('sorryApplet')).validateMove(pieceID, index1, index2);
-//    if (valid) {
-//        var itWorked = document.getElementById('sorryApplet').updatePositions(pieceID, index2);
-//    }
+    if (valid) {
+        var itWorked = document.getElementById('sorryApplet').updatePositions(pieceID, index2);
+    }
 }
 
 function movePiece(index1, index2) {
